@@ -1,0 +1,36 @@
+/* Tabs.css */
+
+.tabs {
+    border: 1px solid #ccc; /* Borde para las pestañas */
+    border-radius: 8px; /* Bordes redondeados */
+    overflow: hidden; /* Ocultar cualquier contenido que se salga del borde */
+  }
+  
+  .tab-titles {
+    display: flex; /* Disposición horizontal */
+    background-color: #f1f1f1; /* Color de fondo de las pestañas */
+  }
+  
+  .tab-title {
+    padding: 15px 20px; /* Espaciado interno */
+    cursor: pointer; /* Cambiar el cursor al pasar el ratón */
+    flex: 1; /* Para que las pestañas ocupen el mismo ancho */
+    text-align: center; /* Centrar texto */
+    transition: background-color 0.3s; /* Transición suave para cambios de fondo */
+  }
+  
+  .tab-title:hover {
+    background-color: #e7e7e7; /* Color de fondo al pasar el ratón */
+  }
+  
+  .tab-title.active {
+    background-color: white; /* Color de fondo para la pestaña activa */
+    font-weight: bold; /* Resaltar la pestaña activa */
+    border-bottom: 2px solid #4A90E2; /* Línea debajo de la pestaña activa */
+  }
+  
+  .tab-content {
+    padding: 20px; /* Espaciado interno para el contenido de las pestañas */
+    background-color: white; /* Color de fondo del contenido */
+  }
+  

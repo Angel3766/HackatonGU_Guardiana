@@ -1,0 +1,28 @@
+/* src/components/SafetyGuide.css */
+
+.safety-guide {
+    padding: 20px; /* Agrega espaciado alrededor del contenido del componente */
+  }
+  
+  .recommendations, .contacts {
+    margin-bottom: 20px; /* Espacio inferior entre las secciones de recomendaciones y contactos */
+  }
+  
+  .recommendations ul, .contacts ul {
+    list-style-type: disc; /* Utiliza puntos como viñetas para listas no ordenadas */
+    margin-left: 20px; /* Indentación para las listas */
+  }
+  
+  h2 {
+    color: #ff007a; /* Color de texto para los títulos de segundo nivel */
+    text-align: center; /* Centra el texto de los títulos */
+  }
+  
+  h3 {
+    color: #333; /* Color de texto para títulos de tercer nivel (si los usas) */
+  }
+  
+  ul li {
+    margin-bottom: 10px; /* Espacio inferior entre elementos de la lista */
+  }
+  

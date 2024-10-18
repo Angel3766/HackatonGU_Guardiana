@@ -1,0 +1,23 @@
+// Variables SCSS para mejorar la mantenibilidad
+$navbar-background-color: #ff699b;
+$navbar-text-color: white;
+$navbar-padding: 20px;
+$box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+// Estilos de la barra de navegación
+.navbar {
+  background-color: $navbar-background-color;  // Color del navbar
+  padding: $navbar-padding;  // Espaciado
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: $box-shadow;  // Sombra
+}
+.navbar-brand {
+  h1 {
+    color: $navbar-text-color;  // Color del título
+    margin: 0;  // Eliminar margen
+    margin-left: 30px;  // Espaciado izquierdo
+  }
+}
+

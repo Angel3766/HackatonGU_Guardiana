@@ -1,6 +1,7 @@
 body {
   font-family: sans-serif;
   font-size: 1.5rem;
+  background-color: rgb(255, 255, 255); 
 }
 
 img {
@@ -26,12 +27,28 @@ button[type="submit"] {
   float: right;
 }
 
-#greeting {
-  margin: 10px auto;
-  padding: 10px 60px;
-  border: 1px solid #222;
-}
+// Variables para colores y espaciados
+$background-color: white;
+$border-radius: 8px;
+$box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+$margin: 20px;
+$padding: 20px;
+$max-width: 600px;
 
-#greeting:empty {
-  display: none;
+.content {
+  flex: 1; // Para que ocupe el espacio restante
+  display: flex; // Usar flexbox para organizar el contenido
+  justify-content: space-between; // Espacio entre el mapa y predicciones
+  align-items: flex-start; // Alinear elementos en la parte superior
+  padding: $padding; // Espaciado alrededor del contenido
+
+  .card {
+    background: $background-color; // Color de fondo de las tarjetas
+    border-radius: $border-radius; // Bordes redondeados
+    box-shadow: $box-shadow; // Sombra
+    margin: $margin; // Margen entre tarjetas
+    padding: $padding; // Espaciado interno
+    flex: 1; // Permitir que las tarjetas crezcan
+    max-width: $max-width; // Ancho máximo del mapa
+  }
 }
